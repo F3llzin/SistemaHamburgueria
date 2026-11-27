@@ -1,2 +1,44 @@
 public abstract class ItemCardapio {
+    private int id;
+    private String nome;
+    private double precoBase;
+    private boolean disponivel;
+
+    public ItemCardapio(int id, String nome, double precoBase) {
+        this.id = id;
+        this.nome = nome;
+        this.precoBase = precoBase;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPrecoBase() {
+        return precoBase;
+    }
+
+    public void setPrecoBase(double precoBase) {
+        this.precoBase = precoBase;
+    }
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void alternarDisponibilidade(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+
+    public double calcularPrecoFinal() {
+        return 0;
+    }
 }
